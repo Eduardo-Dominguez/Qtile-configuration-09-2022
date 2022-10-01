@@ -44,8 +44,6 @@ conky.config = {
     template0 = [[${font Iosevka Nerd Font:size=10:bold}\1${font}]],
 };
 
---El comando playerctl -p chromium metadata no muestra ni informacion alguna, en firefox si que funciona, si quieres mostrar datos de otra app como spotify o vlc usa el mismo comando: playerctl -p app metadata
---Soy un puto genio, ni idea de programar y me acabo de hacer un script para la portada. Cambia el nombre del *.png generado por playerctl a cover.png para poder meterlo al conky. Se actualiza solo en bucle.
 conky.text = [[
 ${if_running firefox}\
 ${exec sh /home/edu/Scripts/rename_cover_firefox_mpris.sh}
